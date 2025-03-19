@@ -1,0 +1,42 @@
+Router-1(config)#router bgp 55836
+Router-1(config-router)#network 195.136.17.0
+Router-1(config-router)#neighbor 195.136.17.10 remote-as 12390
+Router-1(config-router)#network 195.136.17.2 mask 255.255.255.252
+
+******************************* redistribute *****************************
+
+Router-1(config)#router ospf 10
+Router-1(config-router)#redistribute bgp 55836 subnets
+Router-1(config-router)#redistribute bgp 12390 subnets
+Router-1(config-router)#router bgp 55836
+Router-1(config-router)#redistribute ospf 10
+
+********************************** Router 2 **********************************
+
+Router-2(config)#router bgp 12390
+Router-2(config-router)#network 195.136.17.4
+Router-2(config-router)#network 195.136.17.6 mask 255.255.255.252
+Router-2(config-router)#neighbor 195.136.17.14 remote-as 55836
+
+******************************* redistribute *****************************
+
+Router-2(config)#router ospf 10
+Router-2(config-router)#redistribute bgp 12390 subnets
+Router-2(config-router)#redistribute bgp 55836 subnets
+Router-2(config-router)#router bgp 12390
+Router-2(config-router)#redistribute ospf 10
+
+********************************** JIO **********************************
+
+
+ISP-JIO(config)#router bgp 55836
+ISP-JIO(config-router)#network 195.136.17.0
+ISP-JIO(config-router)#network 195.136.17.1 mask 255.255.255.252
+ISP-JIO(config-router)#neighbor 195.136.17.13 remote-as 12390
+
+********************************** Airtel **********************************
+
+ISP-Airtel(config)#router bgp 12390
+ISP-Airtel(config-router)#network 195.136.17.4
+ISP-Airtel(config-router)#network 195.136.17.5 mask 255.255.255.252
+ISP-Airtel(config-router)#neighbor 195.136.17.9 remote-as 55836

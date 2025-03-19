@@ -1,0 +1,56 @@
+HQ-Network_Switch_1(config)#ip domain name HQ-Network_Switch_1
+HQ-Network_Switch_1(config)#crypto key generate rsa
+How many bits in the modulus [512]: 500
+HQ-Network_Switch_1(config)#line vty 0
+HQ-Network_Switch_1(config-line)#transport input ssh
+HQ-Network_Switch_1(config-line)#login local
+HQ-Network_Switch_1(config-line)#username HQ-Network_Switch_1 password 172.16.101.161
+HQ-Network_Switch_1(config)#ip ssh version 2
+
+
+
+
+
+
+
+
+HQ-Network_Switch_2(config)#ip domain name HQ-Network_Switch_2
+HQ-Network_Switch_2(config)#crypto key generate rsa
+How many bits in the modulus [512]: 612
+HQ-Network_Switch_2(config)#line vty 0
+HQ-Network_Switch_2(config-line)#transport input ssh
+HQ-Network_Switch_2(config-line)#login local
+HQ-Network_Switch_2(config-line)#username HQ-Network_Switch_2 password 172.16.101.165
+HQ-Network_Switch_2(config)#ip ssh version 2
+
+
+
+
+
+
+
+
+Branch-Network_Switch_1(config)#ip domain name Branch-Network_Switch_1
+Branch-Network_Switch_1(config)#crypto key generate rsa
+How many bits in the modulus [512]: 714
+Branch-Network_Switch_1(config)#line vty 0
+Branch-Network_Switch_1(config-line)#transport input ssh
+Branch-Network_Switch_1(config-line)#login local
+Branch-Network_Switch_1(config-line)#username Branch-Network_Switch_1 password 172.16.101.169
+Branch-Network_Switch_1(config)#ip ssh version 2
+
+
+
+
+
+
+
+
+Branch-Network_Switch_2(config)#ip domain name Branch-Network_Switch_2
+Branch-Network_Switch_2(config)#crypto key generate rsa
+How many bits in the modulus [512]: 820
+Branch-Network_Switch_2(config)#line vty 0
+Branch-Network_Switch_2(config-line)#transport input ssh
+Branch-Network_Switch_2(config-line)#login local
+Branch-Network_Switch_2(config-line)#username Branch-Network_Switch_2 password 172.16.101.173
+Branch-Network_Switch_2(config)#ip ssh version 2

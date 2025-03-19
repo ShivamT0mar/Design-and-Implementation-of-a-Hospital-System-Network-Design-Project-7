@@ -1,0 +1,43 @@
+
+
+HQ-Network_Switch_1(config)#banner motd #
+***********************************************************
+Execution mode password: HQ-Network_Switch_1
+Privilege mode password: 172.16.101.160/30
+SSH Username: HQ-Network_Switch_1 Password: 172.16.101.161
+***********************************************************
+#
+HQ-Network_Switch_1(config)#do wr
+
+
+
+HQ-Network_Switch_2(config)#banner motd #
+************************************************************
+Execution mode password: HQ-Network_Switch_2
+Privilege mode password: 172.16.101.164/30
+SSH Username: HQ-Network_Switch_2 Password: 172.16.101.165
+************************************************************
+#
+HQ-Network_Switch_2(config)#do wr
+
+
+
+Branch-Network_Switch_1(config)#banner motd #
+***************************************************************
+Execution mode password: Branch-Network_Switch_1
+Privilege mode password: 172.16.1011.168/30
+SSH Username: Branch-Network_Switch_1 Password: 172.16.101.169
+***************************************************************
+#
+Branch-Network_Switch_1(config)#do wr
+
+
+
+Branch-Network_Switch_2(config)#banner motd #
+***************************************************************
+Execution mode password: Branch-Network_Switch_2
+Privilege mode password: 172.16.101.172/30
+SSH Username: Branch-Network_Switch_2 Password: 172.16.101.173
+***************************************************************
+#
+Branch-Network_Switch_2(config)#do wr

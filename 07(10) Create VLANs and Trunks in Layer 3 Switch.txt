@@ -1,0 +1,113 @@
+********************************** Switch 1 Layer 3 ******************************************
+
+
+HQ-Network_Switch_1(config)#vlan 10
+HQ-Network_Switch_1(config-vlan)#name "MLOCS Department"
+HQ-Network_Switch_1(config-vlan)#
+HQ-Network_Switch_1(config-vlan)#vlan 20
+HQ-Network_Switch_1(config-vlan)#name "MER Department"
+HQ-Network_Switch_1(config-vlan)#
+HQ-Network_Switch_1(config-vlan)#vlan 30
+HQ-Network_Switch_1(config-vlan)#name "MRM Department"
+HQ-Network_Switch_1(config-vlan)#
+HQ-Network_Switch_1(config-vlan)#vlan 40
+HQ-Network_Switch_1(config-vlan)#name "IT Department"
+HQ-Network_Switch_1(config-vlan)#
+HQ-Network_Switch_1(config-vlan)#vlan 50
+HQ-Network_Switch_1(config-vlan)#name "CS Department"
+HQ-Network_Switch_1(config-vlan)#
+HQ-Network_Switch_1(config-vlan)#vlan 60
+HQ-Network_Switch_1(config-vlan)#name "GWA Department"
+HQ-Network_Switch_1(config-vlan)#
+HQ-Network_Switch_1(config-vlan)#int range g1/0/1-6
+HQ-Network_Switch_1(config-if-range)#switchport mode trunk
+HQ-Network_Switch_1(config-if-range)#exit
+
+
+
+
+********************************* Switch 2 Layer 3 ******************************************
+
+
+
+
+HQ-Network_Switch_2(config)#vlan 10
+HQ-Network_Switch_2(config-vlan)#name "MLOCS Department"
+HQ-Network_Switch_2(config-vlan)#
+HQ-Network_Switch_2(config-vlan)#vlan 20
+HQ-Network_Switch_2(config-vlan)#name "MER Department"
+HQ-Network_Switch_2(config-vlan)#
+HQ-Network_Switch_2(config-vlan)#vlan 30
+HQ-Network_Switch_2(config-vlan)#name "MRM Department"
+HQ-Network_Switch_2(config-vlan)#
+HQ-Network_Switch_2(config-vlan)#vlan 40
+HQ-Network_Switch_2(config-vlan)#name "IT Department"
+HQ-Network_Switch_2(config-vlan)#
+HQ-Network_Switch_2(config-vlan)#vlan 50
+HQ-Network_Switch_2(config-vlan)#name "CS Department"
+HQ-Network_Switch_2(config-vlan)#
+HQ-Network_Switch_2(config-vlan)#vlan 60
+HQ-Network_Switch_2(config-vlan)#name "GWA Department"
+HQ-Network_Switch_2(config-vlan)#
+HQ-Network_Switch_2(config-vlan)#int range g1/0/1-6
+HQ-Network_Switch_2(config-if-range)#switchport mode trunk
+HQ-Network_Switch_2(config-if-range)#exit
+
+
+
+
+********************************* Switch 3 Layer 3 ******************************************
+
+
+
+
+Branch-Network_Switch_1(config)#vlan 70
+Branch-Network_Switch_1(config-vlan)#name "NSO Department"
+Branch-Network_Switch_1(config-vlan)#
+Branch-Network_Switch_1(config-vlan)#vlan 80
+Branch-Network_Switch_1(config-vlan)#name "HL Department"
+Branch-Network_Switch_1(config-vlan)#
+Branch-Network_Switch_1(config-vlan)#vlan 90
+Branch-Network_Switch_1(config-vlan)#name "HR Departmen"
+Branch-Network_Switch_1(config-vlan)#
+Branch-Network_Switch_1(config-vlan)#vlan 100
+Branch-Network_Switch_1(config-vlan)#name "MK Department"
+Branch-Network_Switch_1(config-vlan)#
+Branch-Network_Switch_1(config-vlan)#vlan 110
+Branch-Network_Switch_1(config-vlan)#name "FIN Department"
+Branch-Network_Switch_1(config-vlan)#
+Branch-Network_Switch_1(config-vlan)#vlan 120
+Branch-Network_Switch_1(config-vlan)#name "BR-GWA Department"
+Branch-Network_Switch_1(config-vlan)#
+Branch-Network_Switch_1(config-vlan)#int range g1/0/1-6
+Branch-Network_Switch_1(config-if-range)#switchport mode trunk
+Branch-Network_Switch_1(config-if-range)#exit
+
+
+
+********************************* Switch 4 Layer 3 ******************************************
+
+
+
+
+Branch-Network_Switch_2(config)#vlan 70
+Branch-Network_Switch_2(config-vlan)#name "NSO Department"
+Branch-Network_Switch_2(config-vlan)#
+Branch-Network_Switch_2(config-vlan)#vlan 80
+Branch-Network_Switch_2(config-vlan)#name "HL Department"
+Branch-Network_Switch_2(config-vlan)#
+Branch-Network_Switch_2(config-vlan)#vlan 90
+Branch-Network_Switch_2(config-vlan)#name "HR Departmen"
+Branch-Network_Switch_2(config-vlan)#
+Branch-Network_Switch_2(config-vlan)#vlan 100
+Branch-Network_Switch_2(config-vlan)#name "MK Department"
+Branch-Network_Switch_2(config-vlan)#
+Branch-Network_Switch_2(config-vlan)#vlan 110
+Branch-Network_Switch_2(config-vlan)#name "FIN Department"
+Branch-Network_Switch_2(config-vlan)#
+Branch-Network_Switch_2(config-vlan)#vlan 120
+Branch-Network_Switch_2(config-vlan)#name "BR-GWA Department"
+Branch-Network_Switch_2(config-vlan)#
+Branch-Network_Switch_2(config-vlan)#int range g1/0/1-6
+Branch-Network_Switch_2(config-if-range)#switchport mode trunk
+Branch-Network_Switch_2(config-if-range)#exit

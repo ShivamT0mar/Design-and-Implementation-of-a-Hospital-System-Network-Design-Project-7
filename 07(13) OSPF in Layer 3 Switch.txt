@@ -1,0 +1,67 @@
+
+******************************** Switch 1 *************************************
+
+HQ-Network_Switch_1(config)#ip routing
+HQ-Network_Switch_1(config)#router ospf 10
+HQ-Network_Switch_1(config-router)#router-id 2.2.2.2
+HQ-Network_Switch_1(config-router)#network 172.16.100.0 0.0.0.31 area 0
+HQ-Network_Switch_1(config-router)#network 172.16.100.32 0.0.0.31 area 0
+HQ-Network_Switch_1(config-router)#network 172.16.100.64 0.0.0.31 area 0
+HQ-Network_Switch_1(config-router)#network 172.16.100.96 0.0.0.31 area 0
+HQ-Network_Switch_1(config-router)#network 172.16.100.128 0.0.0.31 area 0
+HQ-Network_Switch_1(config-router)#network 172.16.100.160 0.0.0.31 area 0
+HQ-Network_Switch_1(config-router)#network 172.16.101.160 0.0.0.3 area 0
+HQ-Network_Switch_1(config-router)#
+HQ-Network_Switch_1(config-router)#ip route 0.0.0.0 0.0.0.0 172.16.101.162
+
+
+******************************** Switch 2 *************************************
+
+
+HQ-Network_Switch_2(config)#ip routing
+HQ-Network_Switch_2(config)#router ospf 10
+HQ-Network_Switch_2(config-router)#router-id 4.4.4.4
+HQ-Network_Switch_2(config-router)#network 172.16.100.0 0.0.0.31 area 0
+HQ-Network_Switch_2(config-router)#network 172.16.100.32 0.0.0.31 area 0
+HQ-Network_Switch_2(config-router)#network 172.16.100.64 0.0.0.31 area 0
+HQ-Network_Switch_2(config-router)#network 172.16.100.96 0.0.0.31 area 0
+HQ-Network_Switch_2(config-router)#network 172.16.100.128 0.0.0.31 area 0
+HQ-Network_Switch_2(config-router)#network 172.16.100.160 0.0.0.31 area 0
+HQ-Network_Switch_2(config-router)#network 172.16.101.164 0.0.0.3 area 0
+HQ-Network_Switch_2(config-router)#
+HQ-Network_Switch_2(config-router)#ip route 0.0.0.0 0.0.0.0 172.16.101.166
+
+
+******************************** Switch 3 *************************************
+
+
+Branch-Network_Switch_1(config)#ip routing
+Branch-Network_Switch_1(config)#router ospf 10
+Branch-Network_Switch_1(config-router)#router-id 6.6.6.6
+Branch-Network_Switch_1(config-router)#network 172.16.100.192 0.0.0.31 area 0
+Branch-Network_Switch_1(config-router)#network 172.16.100.224 0.0.0.31 area 0
+Branch-Network_Switch_1(config-router)#network 172.16.101.0 0.0.0.31 area 0
+Branch-Network_Switch_1(config-router)#network 172.16.101.32 0.0.0.31 area 0
+Branch-Network_Switch_1(config-router)#network 172.16.101.64 0.0.0.31 area 0
+Branch-Network_Switch_1(config-router)#network 172.16.101.96 0.0.0.31 area 0
+Branch-Network_Switch_1(config-router)#network 172.16.101.168 0.0.0.3 area 0
+Branch-Network_Switch_1(config-router)#
+Branch-Network_Switch_1(config-router)#ip route 0.0.0.0 0.0.0.0 172.16.101.170
+
+
+
+******************************** Switch 4 *************************************
+
+
+Branch-Network_Switch_2(config)#ip routing
+Branch-Network_Switch_2(config)#router ospf 10
+Branch-Network_Switch_2(config-router)#router-id 6.6.6.6
+Branch-Network_Switch_2(config-router)#network 172.16.100.192 0.0.0.31 area 0
+Branch-Network_Switch_2(config-router)#network 172.16.100.224 0.0.0.31 area 0
+Branch-Network_Switch_2(config-router)#network 172.16.101.0 0.0.0.31 area 0
+Branch-Network_Switch_2(config-router)#network 172.16.101.32 0.0.0.31 area 0
+Branch-Network_Switch_2(config-router)#network 172.16.101.64 0.0.0.31 area 0
+Branch-Network_Switch_2(config-router)#network 172.16.101.96 0.0.0.31 area 0
+Branch-Network_Switch_2(config-router)#network 172.16.101.172 0.0.0.3 area 0
+Branch-Network_Switch_2(config-router)#
+Branch-Network_Switch_2(config-router)#ip route 0.0.0.0 0.0.0.0 172.16.101.174

@@ -1,0 +1,142 @@
+************************** vlan 10 ***********************************
+
+MLOCS_Department(config)#vlan 10
+MLOCS_Department(config-vlan)#name "MLOCS Department"
+MLOCS_Department(config-vlan)#int range f0/1-12
+MLOCS_Department(config-if-range)#switchport access vlan 10
+MLOCS_Department(config-if-range)#exit
+
+MLOCS_Department(config)#int range g0/1-2
+MLOCS_Department(config-if-range)#switchport mode trunk
+
+************************** vlan 20 ***********************************
+
+MER_Department(config)#vlan 20
+MER_Department(config-vlan)#name "MER Department"
+MER_Department(config-vlan)#int range f0/1-12
+MER_Department(config-if-range)#switchport access vlan 20
+MER_Department(config-if-range)#exit
+
+MER_Department(config)#int range g0/1-2
+MER_Department(config-if-range)#switchport mode trunk
+
+************************** vlan 30 ***********************************
+
+MRM_Department(config)#vlan 30
+MRM_Department(config-vlan)#name "MRM Department"
+MRM_Department(config-vlan)#int range f0/1-12
+MRM_Department(config-if-range)#switchport access vlan 30
+MRM_Department(config-if-range)#exit
+
+MRM_Department(config)#int range g0/1-2
+MRM_Department(config-if-range)#switchport mode trunk
+
+************************** vlan 40 ***********************************
+
+IT_Department(config)#vlan 40
+IT_Department(config-vlan)#name "IT Department"
+IT_Department(config-vlan)#int range f0/1-12
+IT_Department(config-if-range)#switchport access vlan 40
+IT_Department(config-if-range)#exit
+
+IT_Department(config)#int range g0/1-2
+IT_Department(config-if-range)#switchport mode trunk
+
+************************** vlan 50 ***********************************
+
+CS_Department(config)#vlan 50
+CS_Department(config-vlan)#name "CS Department"
+CS_Department(config-vlan)#int range f0/1-12
+CS_Department(config-if-range)#switchport access vlan 50
+CS_Department(config-if-range)#exit
+
+CS_Department(config)#int range g0/1-2
+CS_Department(config-if-range)#switchport mode trunk
+
+************************** vlan 60 ***********************************
+
+GWA_Department(config)#vlan 60
+GWA_Department(config-vlan)#name "GWA Department"
+GWA_Department(config-vlan)#int range f0/1-12
+GWA_Department(config-if-range)#switchport access vlan 60
+GWA_Department(config-if-range)#exit
+
+GWA_Department(config)#int range g0/1-2
+GWA_Department(config-if-range)#switchport mode trunk
+
+************************** vlan 70 ***********************************
+
+NSO_Department(config)#vlan 70
+NSO_Department(config-vlan)#name "NSO Department"
+NSO_Department(config-vlan)#int range f0/1-12
+NSO_Department(config-if-range)#switchport access vlan 70
+NSO_Department(config-if-range)#exit
+
+NSO_Department(config)#int range g0/1-2
+NSO_Department(config-if-range)#switchport mode trunk
+
+************************** vlan 80 ***********************************
+
+HL_Department(config)#vlan 80
+HL_Department(config-vlan)#name "HL Department"
+HL_Department(config-vlan)#int range f0/1-12
+HL_Department(config-if-range)#switchport access vlan 80
+HL_Department(config-if-range)#exit
+
+HL_Department(config)#int range g0/1-2
+HL_Department(config-if-range)#switchport mode trunk
+
+************************** vlan 90 ***********************************
+
+HR_Department(config)#vlan 90
+HR_Department(config-vlan)#name "HR Departmen"
+HR_Department(config-vlan)#int range f0/1-12
+HR_Department(config-if-range)#switchport access vlan 90
+HR_Department(config-if-range)#exit
+
+HR_Department(config)#int range g0/1-2
+HR_Department(config-if-range)#switchport mode trunk
+
+************************** vlan 100 ***********************************
+
+MK_Department(config)#vlan 100
+MK_Department(config-vlan)#name "MK Department"
+MK_Department(config-vlan)#int range f0/1-12
+MK_Department(config-if-range)#switchport access vlan 100
+MK_Department(config-if-range)#exit
+
+MK_Department(config)#int range g0/1-2
+MK_Department(config-if-range)#switchport mode trunk
+
+************************** vlan 110 ***********************************
+
+FIN_Department(config)#vlan 110
+FIN_Department(config-vlan)#name "FIN Department"
+FIN_Department(config-vlan)#int range f0/1-12
+FIN_Department(config-if-range)#switchport access vlan 110
+FIN_Department(config-if-range)#exit
+
+FIN_Department(config)#int range g0/1-2
+FIN_Department(config-if-range)#switchport mode trunk
+
+************************** vlan 120 ***********************************
+
+BR-GWA_Department(config)#vlan 120
+BR-GWA_Department(config-vlan)#name "BR-GWA Department"
+BR-GWA_Department(config-vlan)#int range f0/1-12
+BR-GWA_Department(config-if-range)#switchport access vlan 120
+BR-GWA_Department(config-if-range)#exit
+
+BR-GWA_Department(config)#int range g0/1-2
+BR-GWA_Department(config-if-range)#switchport mode trunk
+
+************************** vlan 130 ***********************************
+
+Server_Department(config)#vlan 130
+Server_Department(config-vlan)#name "Server Department"
+Server_Department(config-vlan)#int range f0/1-12
+Server_Department(config-if-range)#switchport access vlan 130
+Server_Department(config-if-range)#exit
+
+Server_Department(config)#int g0/1
+Server_Department(config-if)#switchport mode trunk

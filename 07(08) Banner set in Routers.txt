@@ -1,0 +1,20 @@
+Router-1(config)#banner motd #
+*************************************************
+Execution mode password: Router-1
+Privilege mode password: 195.136.17.0/30
+SSH Username: Router-1 Password: 195.136.17.1
+*************************************************
+#
+Router-1(config)#do wr
+
+
+
+Router-2(config)#banner motd #
+Enter TEXT message.  End with the character '#'.
+*************************************************
+Execution mode password: Router-2
+Privilege mode password: 195.136.17.4/30
+SSH Username: Router-2 Password: 195.136.17.4
+*************************************************
+#
+Router-2(config)#do wr

@@ -1,0 +1,29 @@
+HQ-Network_Switch_1(config)#int g1/0/24
+HQ-Network_Switch_1(config-if)#no switchport
+HQ-Network_Switch_1(config-if)#ip address 172.16.101.161 255.255.255.252
+HQ-Network_Switch_1(config-if)#no shut
+HQ-Network_Switch_1(config-if)#exit
+
+*****************************************************************
+
+HQ-Network_Switch_2(config)#int g1/0/24
+HQ-Network_Switch_2(config-if)#no switchport
+HQ-Network_Switch_2(config-if)#ip address 172.16.101.165 255.255.255.252
+HQ-Network_Switch_2(config-if)#no shut
+HQ-Network_Switch_2(config-if)#exit
+
+******************************************************************
+
+Branch-Network_Switch_1(config)#int g1/0/24
+Branch-Network_Switch_1(config-if)#no switchport
+Branch-Network_Switch_1(config-if)#ip address 172.16.101.169 255.255.255.252
+Branch-Network_Switch_1(config-if)#no shut
+Branch-Network_Switch_1(config-if)#exit
+
+********************************************************************
+
+Branch-Network_Switch_2(config)#int g1/0/24
+Branch-Network_Switch_2(config-if)#no switchport
+Branch-Network_Switch_2(config-if)#ip address 172.16.101.173 255.255.255.252
+Branch-Network_Switch_2(config-if)#no shut
+Branch-Network_Switch_2(config-if)#exit

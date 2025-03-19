@@ -1,0 +1,22 @@
+
+
+************************************** Router 1 ***************************************************
+
+
+Router-1(config)#line console 0
+Router-1(config-line)#password Router-1
+Router-1(config-line)#login
+Router-1(config-line)#enable secret 195.136.17.0/30
+Router-1(config)#no ip domain-lookup
+
+
+
+
+******************************************************
+
+
+Router-2(config)#line console 0
+Router-2(config-line)#password Router-2
+Router-2(config-line)#login
+Router-2(config-line)#enable secret 195.136.17.4/30
+Router-2(config)#no ip domain-lookup

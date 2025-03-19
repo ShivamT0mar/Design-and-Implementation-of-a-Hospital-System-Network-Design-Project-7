@@ -1,0 +1,35 @@
+HQ-Network_Switch_1(config)#hostname HQ-Network_Switch_1
+HQ-Network_Switch_1(config)#line console 0
+HQ-Network_Switch_1(config-line)#password HQ-Network_Switch_1
+HQ-Network_Switch_1(config-line)#login
+HQ-Network_Switch_1(config-line)#enable secret 172.16.101.160/30
+HQ-Network_Switch_1(config)#no ip domain-lookup
+
+
+
+
+HQ-Network_Switch_2(config)#hostname HQ-Network_Switch_2
+HQ-Network_Switch_2(config)#line console 0
+HQ-Network_Switch_2(config-line)#password HQ-Network_Switch_2
+HQ-Network_Switch_2(config-line)#login
+HQ-Network_Switch_2(config-line)#enable secret 172.16.101.164/30
+HQ-Network_Switch_2(config)#no ip domain-lookup
+
+
+
+
+Branch-Network_Switch_1(config)#hostname Branch-Network_Switch_1
+Branch-Network_Switch_1(config)#line console 0
+Branch-Network_Switch_1(config-line)#password Branch-Network_Switch_1
+Branch-Network_Switch_1(config-line)#login
+Branch-Network_Switch_1(config-line)#enable secret 172.16.1011.168/30
+Branch-Network_Switch_1(config)#no ip domain-lookup
+
+
+
+Branch-Network_Switch_2(config)#hostname Branch-Network_Switch_2
+Branch-Network_Switch_2(config)#line console 0
+Branch-Network_Switch_2(config-line)#password Branch-Network_Switch_2
+Branch-Network_Switch_2(config-line)#login
+Branch-Network_Switch_2(config-line)#enable secret 172.16.101.172/30
+Branch-Network_Switch_2(config)#no ip domain-lookup

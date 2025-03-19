@@ -1,0 +1,111 @@
+HQ-Network_Switch_1(config)#int vlan 10
+HQ-Network_Switch_1(config-if)#no shut
+HQ-Network_Switch_1(config-if)#ip address 172.16.100.1 255.255.255.224
+HQ-Network_Switch_1(config-if)#ip helper-address 172.16.101.155
+HQ-Network_Switch_1(config-if)#int vlan 20
+HQ-Network_Switch_1(config-if)#no shut
+HQ-Network_Switch_1(config-if)#ip  address 172.16.100.33 255.255.255.224
+HQ-Network_Switch_1(config-if)#ip helper-address 172.16.101.155
+HQ-Network_Switch_1(config-if)#int vlan 30
+HQ-Network_Switch_1(config-if)#no shut
+HQ-Network_Switch_1(config-if)#ip  address 172.16.100.65 255.255.255.224
+HQ-Network_Switch_1(config-if)#ip helper-address 172.16.101.155
+HQ-Network_Switch_1(config-if)#int vlan 40
+HQ-Network_Switch_1(config-if)#no shut
+HQ-Network_Switch_1(config-if)#ip  address 172.16.100.97 255.255.255.224
+HQ-Network_Switch_1(config-if)#ip helper-address 172.16.101.155
+HQ-Network_Switch_1(config-if)#int vlan 50
+HQ-Network_Switch_1(config-if)#no shut
+HQ-Network_Switch_1(config-if)#ip  address 172.16.100.129 255.255.255.224
+HQ-Network_Switch_1(config-if)#ip helper-address 172.16.101.155
+HQ-Network_Switch_1(config-if)#int vlan 60
+HQ-Network_Switch_1(config-if)#no shut
+HQ-Network_Switch_1(config-if)#ip  address 172.16.100.161 255.255.255.224
+HQ-Network_Switch_1(config-if)#ip helper-address 172.16.101.155
+
+
+********************************** Layer 3 Switch 2 *************************************
+
+
+HQ-Network_Switch_2(config)#int vlan 10
+HQ-Network_Switch_2(config-if)#no shut
+HQ-Network_Switch_2(config-if)#ip address 172.16.100.1 255.255.255.224
+HQ-Network_Switch_2(config-if)#ip helper-address 172.16.101.155
+HQ-Network_Switch_2(config-if)#int vlan 20
+HQ-Network_Switch_2(config-if)#no shut
+HQ-Network_Switch_2(config-if)#ip  address 172.16.100.33 255.255.255.224
+HQ-Network_Switch_2(config-if)#ip helper-address 172.16.101.155
+HQ-Network_Switch_2(config-if)#int vlan 30
+HQ-Network_Switch_2(config-if)#no shut
+HQ-Network_Switch_2(config-if)#ip  address 172.16.100.65 255.255.255.224
+HQ-Network_Switch_2(config-if)#ip helper-address 172.16.101.155
+HQ-Network_Switch_2(config-if)#int vlan 40
+HQ-Network_Switch_2(config-if)#no shut
+HQ-Network_Switch_2(config-if)#ip  address 172.16.100.97 255.255.255.224
+HQ-Network_Switch_2(config-if)#ip helper-address 172.16.101.155
+HQ-Network_Switch_2(config-if)#int vlan 50
+HQ-Network_Switch_2(config-if)#no shut
+HQ-Network_Switch_2(config-if)#ip  address 172.16.100.129 255.255.255.224
+HQ-Network_Switch_2(config-if)#ip helper-address 172.16.101.155
+HQ-Network_Switch_2(config-if)#int vlan 60
+HQ-Network_Switch_2(config-if)#no shut
+HQ-Network_Switch_2(config-if)#ip  address 172.16.100.161 255.255.255.224
+HQ-Network_Switch_2(config-if)#ip helper-address 172.16.101.155
+
+
+********************************** Layer 3 Switch 3 *************************************
+
+
+
+Branch-Network_Switch_1(config)#int vlan 70
+Branch-Network_Switch_1(config-if)#no shut
+Branch-Network_Switch_1(config-if)#ip address 172.16.100.193 255.255.255.224
+Branch-Network_Switch_1(config-if)#ip helper-address 172.16.101.155
+Branch-Network_Switch_1(config-if)#int vlan 80
+Branch-Network_Switch_1(config-if)#no shut
+Branch-Network_Switch_1(config-if)#ip  address 172.16.100.225 255.255.255.224
+Branch-Network_Switch_1(config-if)#ip helper-address 172.16.101.155
+Branch-Network_Switch_1(config-if)#int vlan 90
+Branch-Network_Switch_1(config-if)#no shut
+Branch-Network_Switch_1(config-if)#ip  address 172.16.101.1 255.255.255.224
+Branch-Network_Switch_1(config-if)#ip helper-address 172.16.101.155
+Branch-Network_Switch_1(config-if)#int vlan 100
+Branch-Network_Switch_1(config-if)#no shut
+Branch-Network_Switch_1(config-if)#ip  address 172.16.101.33 255.255.255.224
+Branch-Network_Switch_1(config-if)#ip helper-address 172.16.101.155
+Branch-Network_Switch_1(config-if)#int vlan 110
+Branch-Network_Switch_1(config-if)#no shut
+Branch-Network_Switch_1(config-if)#ip  address 172.16.101.65 255.255.255.224
+Branch-Network_Switch_1(config-if)#ip helper-address 172.16.101.155
+Branch-Network_Switch_1(config-if)#int vlan 120
+Branch-Network_Switch_1(config-if)#no shut
+Branch-Network_Switch_1(config-if)#ip  address 172.16.101.97 255.255.255.224
+Branch-Network_Switch_1(config-if)#ip helper-address 172.16.101.155
+
+
+********************************** Layer 3 Switch 4 *************************************
+
+Branch-Network_Switch_2(config)#int vlan 70
+Branch-Network_Switch_2(config-if)#no shut
+Branch-Network_Switch_2(config-if)#ip address 172.16.100.193 255.255.255.224
+Branch-Network_Switch_2(config-if)#ip helper-address 172.16.101.155
+Branch-Network_Switch_2(config-if)#int vlan 80
+Branch-Network_Switch_2(config-if)#no shut
+Branch-Network_Switch_2(config-if)#ip  address 172.16.100.225 255.255.255.224
+Branch-Network_Switch_2(config-if)#ip helper-address 172.16.101.155
+Branch-Network_Switch_2(config-if)#int vlan 90
+Branch-Network_Switch_2(config-if)#no shut
+Branch-Network_Switch_2(config-if)#ip  address 172.16.101.1 255.255.255.224
+Branch-Network_Switch_2(config-if)#ip helper-address 172.16.101.155
+Branch-Network_Switch_2(config-if)#int vlan 100
+Branch-Network_Switch_2(config-if)#no shut
+Branch-Network_Switch_2(config-if)#ip  address 172.16.101.33 255.255.255.224
+Branch-Network_Switch_2(config-if)#ip helper-address 172.16.101.155
+Branch-Network_Switch_2(config-if)#int vlan 110
+Branch-Network_Switch_2(config-if)#no shut
+Branch-Network_Switch_2(config-if)#ip  address 172.16.101.65 255.255.255.224
+Branch-Network_Switch_2(config-if)#ip helper-address 172.16.101.155
+Branch-Network_Switch_2(config-if)#int vlan 120
+Branch-Network_Switch_2(config-if)#no shut
+Branch-Network_Switch_2(config-if)#ip  address 172.16.101.97 255.255.255.224
+Branch-Network_Switch_2(config-if)#ip helper-address 172.16.101.155

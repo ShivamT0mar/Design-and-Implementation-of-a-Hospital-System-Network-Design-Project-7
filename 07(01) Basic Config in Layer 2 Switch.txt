@@ -1,0 +1,217 @@
+
+
+MLOCS_Department(config)#hostname MLOCS_Department
+MLOCS_Department(config)#line console 0
+MLOCS_Department(config-line)#password MLOCS_Department
+MLOCS_Department(config-line)#login
+MLOCS_Department(config-line)#enable secret 172.16.100.0/27
+MLOCS_Department(config)#line vty 0
+MLOCS_Department(config-line)#password 255.255.255.224
+MLOCS_Department(config-line)#login
+MLOCS_Department(config-line)#no ip domain-lookup
+
+
+
+
+MER_Department(config)#hostname MER_Department
+MER_Department(config)#line console 0
+MER_Department(config-line)#password MER_Department
+MER_Department(config-line)#login
+MER_Department(config-line)#enable secret 172.16.100.32/27
+MER_Department(config)#line vty 0
+MER_Department(config-line)#password 255.255.255.224
+MER_Department(config-line)#login
+MER_Department(config-line)#no ip domain-lookup
+
+
+
+
+MRM_Department(config)#hostname MRM_Department
+MRM_Department(config)#line console 0
+MRM_Department(config-line)#password MRM_Department
+MRM_Department(config-line)#login
+MRM_Department(config-line)#enable secret 172.16.100.64/27
+MRM_Department(config)#line vty 0
+MRM_Department(config-line)#password 255.255.255.224
+MRM_Department(config-line)#login
+MRM_Department(config-line)#no ip domain-lookup
+
+
+
+
+IT_Department(config)#hostname IT_Department
+IT_Department(config)#line console 0
+IT_Department(config-line)#password IT_Department
+IT_Department(config-line)#login
+IT_Department(config-line)#enable secret 172.16.100.96/27
+IT_Department(config)#line vty 0
+IT_Department(config-line)#password 255.255.255.224
+IT_Department(config-line)#login
+IT_Department(config-line)#no ip domain-lookup
+
+
+
+
+CS_Department(config)#hostname CS_Department
+CS_Department(config)#line console 0
+CS_Department(config-line)#password CS_Department
+CS_Department(config-line)#login
+CS_Department(config-line)#enable secret 172.16.100.128/27
+CS_Department(config)#line vty 0
+CS_Department(config-line)#password 255.255.255.224
+CS_Department(config-line)#login
+CS_Department(config-line)#no ip domain-lookup
+
+
+
+
+GWA_Department(config)#hostname GWA_Department
+GWA_Department(config)#line console 0
+GWA_Department(config-line)#password GWA_Department
+GWA_Department(config-line)#login
+GWA_Department(config-line)#enable secret 172.16.100.160/27
+GWA_Department(config)#line vty 0
+GWA_Department(config-line)#password 255.255.255.224
+GWA_Department(config-line)#login
+GWA_Department(config-line)#no ip domain-lookup
+
+
+
+
+
+
+
+
+NSO_Department(config)#hostname NSO_Department
+NSO_Department(config)#line console 0
+NSO_Department(config-line)#password NSO_Department
+NSO_Department(config-line)#login
+NSO_Department(config-line)#enable secret 172.16.100.192/27
+NSO_Department(config)#line vty 0
+NSO_Department(config-line)#password 255.255.255.224
+NSO_Department(config-line)#login
+NSO_Department(config-line)#no ip domain-lookup
+
+
+
+
+HL_Department(config)#hostname HL_Department
+HL_Department(config)#line console 0
+HL_Department(config-line)#password HL_Department
+HL_Department(config-line)#login
+HL_Department(config-line)#enable secret 172.16.100.224/27
+HL_Department(config)#line vty 0
+HL_Department(config-line)#password 255.255.255.224
+HL_Department(config-line)#login
+HL_Department(config-line)#no ip domain-lookup
+
+
+
+
+
+HR_Department(config)#hostname HR_Department
+HR_Department(config)#line console 0
+HR_Department(config-line)#password HR_Department
+HR_Department(config-line)#login
+HR_Department(config-line)#enable secret 172.16.101.0/27
+HR_Department(config)#line vty 0
+HR_Department(config-line)#password 255.255.255.224
+HR_Department(config-line)#login
+HR_Department(config-line)#no ip domain-lookup
+
+
+
+
+
+MK_Department(config)#hostname MK_Department
+MK_Department(config)#line console 0
+MK_Department(config-line)#password MK_Department
+MK_Department(config-line)#login
+MK_Department(config-line)#enable secret 172.16.101.32/27
+MK_Department(config)#line vty 0
+MK_Department(config-line)#password 255.255.255.224
+MK_Department(config-line)#login
+MK_Department(config-line)#no ip domain-lookup
+
+
+
+
+
+FIN_Department(config)#hostname FIN_Department
+FIN_Department(config)#line console 0
+FIN_Department(config-line)#password FIN_Department
+FIN_Department(config-line)#login
+FIN_Department(config-line)#enable secret 172.16.101.64/27
+FIN_Department(config)#line vty 0
+FIN_Department(config-line)#password 255.255.255.224
+FIN_Department(config-line)#login
+FIN_Department(config-line)#no ip domain-lookup
+
+
+
+
+
+BR-GWA_Department(config)#hostname BR-GWA_Department
+BR-GWA_Department(config)#line console 0
+BR-GWA_Department(config-line)#password BR-GWA_Department
+BR-GWA_Department(config-line)#login
+BR-GWA_Department(config-line)#enable secret 172.16.101.96/27
+BR-GWA_Department(config)#line vty 0
+BR-GWA_Department(config-line)#password 255.255.255.224
+BR-GWA_Department(config-line)#login
+BR-GWA_Department(config-line)#no ip domain-lookup
+
+
+
+
+Server_Department(config)#hostname Server_Department
+Server_Department(config)#line console 0
+Server_Department(config-line)#password Server_Department
+Server_Department(config-line)#login
+Server_Department(config-line)#enable secret 172.16.101.128/27
+Server_Department(config)#line vty 0
+Server_Department(config-line)#password 255.255.255.224
+Server_Department(config-line)#login
+Server_Department(config-line)#no ip domain-lookup
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MLOCS Department = Medical Lead Operation and Consultancy Services
+MER Department = Medical Emergency and Reporting
+MRM Department = Medical Records Management
+IT Department = Information Technology
+CS Department = Customer Service
+GWA Department = Guest/Waiting area
+
+NSO Department = Nurses & Surgery Operations
+HL Department = Hospital Labs
+HR Departmen = Human resource
+MK Department = Marketing
+FIN Department = Finance
+BR-GWA Department = Guest/Waiting area
+Server Department = Server-Side Network

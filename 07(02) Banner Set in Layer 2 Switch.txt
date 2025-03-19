@@ -1,0 +1,152 @@
+MLOCS_Department(config)#banner motd #
+*************************************************
+Execution mode password:  MLOCS_Department
+Privilege mode password: 172.16.100.0/27
+line vty: 255.255.255.224
+*************************************************
+#
+MLOCS_Department(config)#do wr
+
+
+
+
+MER_Department(config)#banner motd #
+*************************************************
+Execution mode password:  MER_Department
+Privilege mode password: 172.16.100.32/27
+line vty: 255.255.255.224
+*************************************************
+#
+MER_Department(config)#do wr
+
+
+
+
+MRM_Department(config)#banner motd #
+*************************************************
+Execution mode password: MRM_Department
+Privilege mode password: 172.16.100.64/27
+line vty: 255.255.255.224
+*************************************************
+#
+MRM_Department(config)#do wr
+
+
+
+
+IT_Department(config)#banner motd #
+*************************************************
+Execution mode password:  IT_Department
+Privilege mode password: 172.16.100.96/27
+line vty: 255.255.255.224
+*************************************************
+#
+IT_Department(config)#do wr
+
+
+
+
+CS_Department(config)#banner motd #
+*************************************************
+Execution mode password: CS_Department
+Privilege mode password: 172.16.100.128/27
+line vty: 255.255.255.224
+*************************************************
+#
+CS_Department(config)#do wr
+
+
+
+
+GWA_Department(config)#banner motd #
+*************************************************
+Execution mode password: GWA_Department
+Privilege mode password: 172.16.100.160/27
+line vty: 255.255.255.224
+*************************************************
+#
+GWA_Department(config)#do wr
+
+
+
+
+NSO_Department(config)#banner motd #
+*************************************************
+Execution mode password: NSO_Department
+Privilege mode password: 172.16.100.192/27
+line vty: 255.255.255.224
+*************************************************
+#
+NSO_Department(config)#do wr
+
+
+
+
+HL_Department(config)#banner motd #
+*************************************************
+Execution mode password: HL_Department
+Privilege mode password: 172.16.100.224/27
+line vty: 255.255.255.224
+*************************************************
+#
+HL_Department(config)#do wr
+
+
+
+
+HR_Department(config)#banner motd #
+*************************************************
+Execution mode password: HR_Department
+Privilege mode password: 172.16.101.0/27
+line vty: 255.255.255.224
+*************************************************
+#
+HR_Department(config)#do wr
+
+
+
+
+MK_Department(config)#banner motd #
+*************************************************
+Execution mode password: MK_Department
+Privilege mode password: 172.16.101.32/27
+line vty: 255.255.255.224
+*************************************************
+#
+MK_Department(config)#do wr
+
+
+
+
+FIN_Department(config)#banner motd #
+*************************************************
+Execution mode password: FIN_Department
+Privilege mode password: 172.16.101.64/27
+line vty: 255.255.255.224
+*************************************************
+#
+FIN_Department(config)#do wr
+
+
+
+
+BR-GWA_Department(config)#banner motd #
+*************************************************
+Execution mode password: BR-GWA_Department
+Privilege mode password: 172.16.101.96/27
+line vty: 255.255.255.224
+*************************************************
+#
+BR-GWA_Department(config)#do wr
+
+
+
+
+Server_Department(config)#banner motd #
+*************************************************
+Execution mode password: Server_Department
+Privilege mode password: 172.16.101.128/27
+line vty: 255.255.255.224
+*************************************************
+#
+Server_Department(config)#do wr

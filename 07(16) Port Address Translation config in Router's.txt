@@ -1,0 +1,40 @@
+Router-1(config)#access-list 1 permit 172.16.100.0 0.0.0.31
+Router-1(config)#access-list 1 permit 172.16.100.32 0.0.0.31
+Router-1(config)#access-list 1 permit 172.16.100.64 0.0.0.31
+Router-1(config)#access-list 1 permit 172.16.100.96 0.0.0.31
+Router-1(config)#access-list 1 permit 172.16.100.128 0.0.0.31
+Router-1(config)#access-list 1 permit 172.16.100.160 0.0.0.31
+Router-1(config)#access-list 1 permit 172.16.101.128 0.0.0.31
+Router-1(config)#ip nat inside source list 1 interface s0/0/0 overload
+Router-1(config)#ip nat inside source list 1 interface s0/1/0 overload
+Router-1(config)#int g0/0
+Router-1(config-if)#ip nat inside
+Router-1(config-if)#int g0/1
+Router-1(config-if)#ip nat inside
+Router-1(config-if)#int g0/2.130
+Router-1(config-subif)#ip nat inside
+Router-1(config-subif)#int s0/0/0
+Router-1(config-if)#ip nat outside
+Router-1(config-if)#int s0/1/0
+Router-1(config-if)#ip nat outside
+
+
+*************************************** Router 2******************************************
+
+
+Router-2(config)#access-list 1 permit 172.16.100.192 0.0.0.31
+Router-2(config)#access-list 1 permit 172.16.100.224 0.0.0.31
+Router-2(config)#access-list 1 permit 172.16.101.0 0.0.0.31
+Router-2(config)#access-list 1 permit 172.16.101.32 0.0.0.31
+Router-2(config)#access-list 1 permit 172.16.101.64 0.0.0.31
+Router-2(config)#access-list 1 permit 172.16.101.96 0.0.0.31
+Router-2(config)#ip nat inside source list 1 interface s0/0/1 overload
+Router-2(config)#ip nat inside source list 1 interface s0/1/0 overload
+Router-2(config)#int g0/0
+Router-2(config-if)#ip nat inside
+Router-2(config-if)#int g0/1
+Router-2(config-if)#ip nat inside
+Router-2(config-if)#int s0/0/1
+Router-2(config-if)#ip nat outside
+Router-2(config-if)#int s0/1/0
+Router-2(config-if)#ip nat outside

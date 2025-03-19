@@ -1,0 +1,21 @@
+Router-1(config)#ip domain name Router-1
+Router-1(config)#crypto key generate rsa
+How many bits in the modulus [512]: 714
+Router-1(config)#line vty 0
+Router-1(config-line)#transport input ssh
+Router-1(config-line)#login local
+Router-1(config-line)#username Router-1 password 195.136.17.1
+Router-1(config)#ip ssh version 2
+
+
+
+
+
+Router-2(config)#ip domain name Router-2
+Router-2(config)#crypto key generate rsa
+How many bits in the modulus [512]: 915
+Router-2(config)#line vty 0
+Router-2(config-line)#transport input ssh
+Router-2(config-line)#login local
+Router-2(config-line)#username Router-2 password 195.136.17.4
+Router-2(config)#ip ssh version 2
